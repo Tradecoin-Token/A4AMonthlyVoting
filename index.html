@@ -122,25 +122,25 @@
         var blockHeight;
         
             var unix_timestamp = 1634157000000
-            var eachweek = 1296000000
+            var eachweek = 1814400000
             var eachhour = 3600000
             var pausetime = 86400000*7 
             var PendingTime = unix_timestamp;
             var currentrunningweek = Math.floor(((new Date().getTime()-unix_timestamp)/eachweek)+1,0)
             
-            let VotingAsset1 = "_Total_Votes_PirateChain";
-            let VA1          = VotingAsset1.replace(VotingAsset1, "ARRR");
+            let VotingAsset1 = "_Total_Votes_Bitcoin";
+            let VA1          = VotingAsset1.replace(VotingAsset1, "BTC");
             
-            let VotingAsset2 = "_Total_Votes_AttentionToken";
-            let VA2          = VotingAsset2.replace(VotingAsset2, "BAT");
-            
-            
-            let VotingAsset3 = "_Total_Votes_Privacy"
-            let VA3          = VotingAsset3.replace(VotingAsset3,"PRCY"); 
+            let VotingAsset2 = "_Total_Votes_BitcoinCash";
+            let VA2          = VotingAsset2.replace(VotingAsset2, "BCH");
             
             
-            let VotingAsset4 = "_Total_Votes_Haven"
-            let VA4          = VotingAsset4.replace(VotingAsset4,"XHV");
+            let VotingAsset3 = "_Total_Votes_Dent"
+            let VA3          = VotingAsset3.replace(VotingAsset3,"DENT"); 
+            
+            
+            let VotingAsset4 = "_Total_Votes_Monero"
+            let VA4          = VotingAsset4.replace(VotingAsset4,"XMR");
             
             window.onload = async function(){
             var responseObject = await fetch(APIURL);
