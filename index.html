@@ -128,19 +128,19 @@
             var PendingTime = unix_timestamp;
             var currentrunningweek = Math.floor(((new Date().getTime()-unix_timestamp)/eachweek)+1,0)
             
-            let VotingAsset1 = "_Total_Votes_Bitcoin";
-            let VA1          = VotingAsset1.replace(VotingAsset1, "BTC");
+            let VotingAsset1 = "_Total_Votes_Monero";
+            let VA1          = VotingAsset1.replace(VotingAsset1, "XMR");
             
-            let VotingAsset2 = "_Total_Votes_BitcoinCash";
-            let VA2          = VotingAsset2.replace(VotingAsset2, "BCH");
+            let VotingAsset2 = "_Total_Votes_Firo";
+            let VA2          = VotingAsset2.replace(VotingAsset2, "FIRO");
             
             
             let VotingAsset3 = "_Total_Votes_Dent"
             let VA3          = VotingAsset3.replace(VotingAsset3,"DENT"); 
             
             
-            let VotingAsset4 = "_Total_Votes_Monero"
-            let VA4          = VotingAsset4.replace(VotingAsset4,"XMR");
+            let VotingAsset4 = "_Total_Votes_Waves"
+            let VA4          = VotingAsset4.replace(VotingAsset4,"WAVES");
             
             window.onload = async function(){
             var responseObject = await fetch(APIURL);
