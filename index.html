@@ -121,31 +121,31 @@
         var sortRule = 0;
         var blockHeight;
         
-            var unix_timestamp = 1631910600000
-            var eachweek = 2937600000
+            var unix_timestamp = 1636662600000
+            var eachweek = 2332800000
             var eachhour = 3600000
             var pausetime = 86400000*7 
             var PendingTime = unix_timestamp;
             var currentrunningweek = Math.floor(((new Date().getTime()-unix_timestamp)/eachweek)+1,0)
             
-            let VotingAsset1 = "_Total_Votes_Sentinel";
-            let VA1          = VotingAsset1.replace(VotingAsset1, "DVPN");
+            let VotingAsset1 = "_Total_Votes_Firo";
+            let VA1          = VotingAsset1.replace(VotingAsset1, "FIRO");
             
-            let VotingAsset2 = "_Total_Votes_TurtleNetwork";
-            let VA2          = VotingAsset2.replace(VotingAsset2, "TN");
-            
-            
-            let VotingAsset3 = "_Total_Votes_Haven"
-            let VA3          = VotingAsset3.replace(VotingAsset3,"XHV"); 
+            let VotingAsset2 = "_Total_Votes_Raptoreum";
+            let VA2          = VotingAsset2.replace(VotingAsset2, "RTM");
             
             
-            let VotingAsset4 = "_Total_Votes_AttentionToken"
-            let VA4          = VotingAsset4.replace(VotingAsset4,"BAT");
+            let VotingAsset3 = "_Total_Votes_AttentionToken"
+            let VA3          = VotingAsset3.replace(VotingAsset3,"BAT"); 
+            
+            
+            let VotingAsset4 = "_Total_Votes_Sushi"
+            let VA4          = VotingAsset4.replace(VotingAsset4,"SUSHI");
             
             window.onload = async function(){
             var responseObject = await fetch(APIURL);
             loanData = await responseObject.json();
-            
+            console.log(currentrunningweek);
             var panel1ResponseObject = await fetch("https://tnnode.turtlenetwork.eu/addresses/data/3JwgdK9j66oNPGyYmSzTRTmtfKXyukJXtK5/Current_Voting_Month");
             if(panel1ResponseObject.status ==404)
             {
